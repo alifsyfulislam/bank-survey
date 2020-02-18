@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+body, html{
+    height: 250px;
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+    /*overflow: hidden;*/
+    background-image: url("img/bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.purple_box{
+    background: rgb(60,63,79);
+    background: radial-gradient(circle, rgba(60,63,79,1) 0%, rgba(207,195,195,0.8099614845938375) 80%);
+    height: 250px;
+    width: 300px;
+    top: 0px;
+    left: 0px;
+}
+
+.survey_filed{
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.survey_filed h3{
+    width: 300px;
+    font-size: 19px;
+    margin: 15% auto 10% auto;
+    color: #000000;
+    transition: all .3s ease;
+}
+
+.start_btn{
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+.next_1,.next_2,.next_3{
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    height: 30px;
+    width: 75px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: whitesmoke;
+    top: 125px;
+    left: 190px;
+}
+
+.beep{
+    animation: beep .4s ease infinite;
+}
+
+@keyframes beep {
+    0%,100%{
+        transform: scale(.95);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+
+.slide_1,.slide_2,.slide_3,.slide_4{
+    height: 250px;
+    width: 300px;
+    z-index: 2;
+    /*animation: beep .4s ease infinite;*/
+}
+.slide_2{
+    z-index: 3;
+}
+
+.slide_3{
+    z-index: 4;
+}
+
+.slide_4{
+    z-index: 5;
+}
+
+[class^="slide_"] h3 {
+    width: 300px;
+    font-size: 22px;
+    margin: 10% auto 3% auto;
+    color: #000000;
+    text-align: center;
+}
+
+.big{
+    margin: 0px;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+label{
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+.select_answer{
+    width: 280px;
+    height: 175px;
+    padding: 2%;
+    left: 10px;
+}
+
+.myError,.myError1,.myError2{
+    width: 300px;
+    text-align: center;
+    color: #761c19;
+    z-index: 100000000000;
+    font-size: 14px;
+}
+
+.user_name,.user_tel{
+    width: 175px;
+    height: 30px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+
+.submit_btn{
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: whitesmoke;
+    margin: 5px 0px;
+}
+
+
+
+
